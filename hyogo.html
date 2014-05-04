@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN">
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>東京県民の多様な東京スタイル</title>
+    
+    <link rel="stylesheet" type="text/css" href="win.css" media="all">  
+	<script language="JavaScript" type="text/javascript" src="mac.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!--Google API読み込み--> 
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script> 
+  
+    <!--マウスオーバー時に画像表示-->
+    <script type="text/javascript">google.load("jquery", "1.3");</script>  
+    <script type="text/javascript" src="imgpreview.js"></script>
+    
+    <script type="text/javascript">
+$(function(){
+	var thumbSize = 400;
+	var magnifySize = 700;
+
+	$(".magnify").each(function(){
+		$(this).css({width:(thumbSize)});
+	});
+
+	var objWidth = $('.magnify').width();
+	var objHeight = $('.magnify').height();
+
+	$(".magnify").each(function(){
+		$(this).wrapAll('<span class="magnify_cover"></span>');
+		$(this).parent('.magnify_cover').css({
+			margin: '0 10px 10px 0',
+			width: (objWidth),
+			height: (objHeight),
+			float: 'left',
+			position: 'relative'
+		});
+	});
+
+	$(".magnify").hover(function(){
+		$(this).css({top:'0',left:'0',position: 'absolute'});
+		$(this).stop().animate({width:(magnifySize)},500,function(){
+			$(this).addClass('shadow');
+		});
+	}, function(){
+		$(this).stop().animate({width:(thumbSize)},300,function(){
+			$(this).css({top:'',left:'',position: 'relative'});
+			$(this).removeClass('shadow');
+		});
+	});
+
+});
+</script>
+  
+  </head>
+  <h3>東京県民の多様な東京スタイル</h3>
+  
+  <ul class="tab clear">
+    <li><a href="index.html" class="green">はじめに</a></li>
+    <li><a href="net.html" class="blue">ネット県民</a></li>
+    <li><a href="tokyo.html" class="blue">東京県民</a></li>
+    <li><a href="iwate.html" class="red">岩手</a></li>
+    <li><a href="nagano.html" class="red">長野</a></li>
+    <li><a href="mie.html" class="red">三重</a></li>
+    <li><a href="fukuoka.html" class="red">福岡</a></li>
+    <li><a href="hiroshima.html" class="red">広島</a></li>
+    <li class="none"><a href="hyogo.html" class="red">兵庫</a></li>
+  </ul>
+  
+  <body>
+  	<div id="container">
+	<div id ="boxA">
+    <img src="img/k_hyogo.png" width="1200" usemap="#hyogo">
+    <map name="hyogo">
+      <area shape="rect" coords="95,70,220,140" href="img/hyogo1.png" class="map">
+      <area shape="rect" coords="95,170,220,270" href="img/hyogo2.png" class="map"> 
+      <area shape="rect" coords="95,310,220,460" href="img/hyogo3.png" class="map">     
+      <area shape="rect" coords="255,70,380,140" href="img/hyogo4.png" class="map">
+      <area shape="rect" coords="255,170,380,270" href="img/hyogo5.png" class="map"> 
+      <area shape="rect" coords="255,310,380,460" href="img/hyogo6.png" class="map"> 
+      <area shape="rect" coords="420,70,535,140" href="img/hyogo7.png" class="map">
+      <area shape="rect" coords="420,170,535,270" href="img/hyogo8.png" class="map"> 
+      <area shape="rect" coords="420,310,535,460" href="img/hyogo9.png" class="map"> 
+      <area shape="rect" coords="570,70,700,140" href="img/hyogo10.png" class="map">
+      <area shape="rect" coords="570,170,700,270" href="img/hyogo11.png" class="map"> 
+      <area shape="rect" coords="570,310,700,460" href="img/hyogo12.png" class="map"> 
+      <area shape="rect" coords="730,70,870,140" href="img/hyogo13.png" class="map">
+      <area shape="rect" coords="730,170,870,270" href="img/hyogo14.png" class="map"> 
+      <area shape="rect" coords="730,310,870,460" href="img/hyogo15.png" class="map">
+      <area shape="rect" coords="895,70,1020,140" href="img/hyogo16.png" class="map">
+      <area shape="rect" coords="895,170,1020,270" href="img/hyogo17.png" class="map"> 
+      <area shape="rect" coords="895,310,1020,460" href="img/hyogo18.png" class="map">
+      <area shape="rect" coords="1050,70,1170,140" href="img/hyogo19.png" class="map">
+
+      <area shape="rect" coords="1050,310,1170,460" href="img/hyogo21.png" class="map">
+    </map>
+    </div>
+	
+	<div id="boxB">
+	<br>
+	<img src="img/g_hyogo.png" width="400">
+	</div>
+
+	<div id="boxC">	   
+    <p>
+まず、大学同窓を中心とした＜神戸同窓＞だが、支持度は高くなく、「ヴィッセル神戸」はそれなりに応援するもののわざわざ東京で集い応援するほどの熱意はない、というライトな応援態度が窺える。
+<br><br>
+神戸ブランドを表す＜神戸主義＞からは、「やっぱ神戸が大好き」だから「神戸嬢」同士で集まり、「関西弁？神戸弁やし！」と神戸弁で「We love Kobe」とお喋りする、兵庫県民は東京ライフでも当然＜神戸主義＞の精神が想像できる。続いておしゃれな＜神戸スタイル＞、「神戸カフェ（Sweets）が好き」な彼ら「神戸っこ」は、帰省時に備え「神戸元町」で「神戸の雑貨屋をハシゴする」ための情報共有を日々行っている。買い物なら「IKEA」「DIESEL」、＜神戸スタイル＞は東京ライフでも忘れない。また、兵庫県民は日々＜神戸グルメ＞情報収集を怠らない。「神戸・芦屋・西宮のうまい店」に敏感で「高級グルメ＆有名店」志向、そのため「いざという時の飲食店探し」に熱心である。また、兵庫県民にとって自炊は節約ではなく、あくまで「お店の味をパクる」という発想に基づいている点も興味深い。「喜ばれる差し入れを考える会」とセットに考えると、東京では懐かしい＜神戸グルメ＞を持ち寄ってホームパーティのような華やかな社交の場を形成しているのだろう。
+<br><br>
+兵庫県民に最も支持される＜関西人の私＞は、「関西人やのに東京に…」と、関西人としてのブランド意識と関東での集いを中心に構成される系である。当然「阪神タイガース」ファンで「関西弁が好き」だが、「ノンスモーカー」「テニス大好き」といった共有コミュニティも入りまじり、ネット上で自分を主張するには関西人であるということも欠かせないという思考が窺える。そして兵庫県民は＜世渡り上手の神戸人＞である。ネット上で、ある時は自分たちのことを「マクドと呼ぶ人たち」と括り、またある時は出身学校コミュニティでのネットワーキングに熱心かつ「若手企業家ネットワーク」で「本気で学ぶ英語上達のコツ」といったビジネススキル向上の情報共有をも行うというように、ネットの活用に長けた兵庫県民の姿を想像させる。この支持度は29.49%である。また、＜神戸・東京遊び＞は神戸地方の集いと東京遊びが入り乱れた系であり、帰省すれば「岡本（神戸）集合」だが普段は「青山／表参道」や「六本木界隈夜遊び系」で華やかに遊ぶ。
+<br>
+<br>
+このように、兵庫県の東京＜県民＞スタイルは、親密/自由社交圏の融合軸上に特化するパタンであり、兵庫県民である自分と東京ライフにおける自分の融合を自然に受け入れ生きる姿が容易に想像できる。兵庫県民は＜神戸グルメ＞＜神戸スタイル＞＜神戸主義＞と神戸愛が強く兵庫県民同士集まっては神戸愛を語り合う。一方自由社交圏に示される通り、兵庫県民であることを足枷になどせず、ネットワーキングを最大活用する＜世渡り上手の神戸人＞なのである。兵庫県のスタイルは親密/自由社交圏に特化による故郷と東京ライフ両者の融合パタンの典型として、東京＜県民＞スタイルの一つに位置づけられるのである。
+    </p>
+　</div>
+    
+    <!--マウスオーバー用script-->
+	<script>  
+		jQuery.noConflict();  
+		(function($){    		
+		$('.map').imgPreview({
+    		containerID: 'imgPreviewWithStyles',
+    		imgCSS: {
+    		    height: 250
+    		},
+    		onShow: function(link){
+        		$(link).stop().animate({opacity:0.4});
+        		$('img', this).css({opacity:0});
+    		},
+    		onLoad: function(){
+        		$(this).animate({opacity:1}, 300);
+    		},
+    		onHide: function(link){
+        		$(link).stop().animate({opacity:1});
+    		}
+		}); 
+		})(jQuery);  
+	</script>  
+  </body>
+</html>
+

@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN">
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>東京県民の多様な東京スタイル</title>
+    
+    <link rel="stylesheet" type="text/css" href="win.css" media="all">  
+	<script language="JavaScript" type="text/javascript" src="mac.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!--Google API読み込み--> 
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script> 
+  
+    <!--マウスオーバー時に画像表示-->
+    <script type="text/javascript">google.load("jquery", "1.3");</script>  
+    <script type="text/javascript" src="imgpreview.js"></script>
+    
+    <script type="text/javascript">
+$(function(){
+	var thumbSize = 400;
+	var magnifySize = 700;
+
+	$(".magnify").each(function(){
+		$(this).css({width:(thumbSize)});
+	});
+
+	var objWidth = $('.magnify').width();
+	var objHeight = $('.magnify').height();
+
+	$(".magnify").each(function(){
+		$(this).wrapAll('<span class="magnify_cover"></span>');
+		$(this).parent('.magnify_cover').css({
+			margin: '0 10px 10px 0',
+			width: (objWidth),
+			height: (objHeight),
+			float: 'left',
+			position: 'relative'
+		});
+	});
+
+	$(".magnify").hover(function(){
+		$(this).css({top:'0',left:'0',position: 'absolute'});
+		$(this).stop().animate({width:(magnifySize)},500,function(){
+			$(this).addClass('shadow');
+		});
+	}, function(){
+		$(this).stop().animate({width:(thumbSize)},300,function(){
+			$(this).css({top:'',left:'',position: 'relative'});
+			$(this).removeClass('shadow');
+		});
+	});
+
+});
+</script>
+  
+  </head>
+  <h3>東京県民の多様な東京スタイル</h3>
+  
+  <ul class="tab clear">
+    <li><a href="index.html" class="green">はじめに</a></li>
+    <li><a href="net.html" class="blue">ネット県民</a></li>
+    <li><a href="tokyo.html" class="blue">東京県民</a></li>
+    <li class="none"><a href="iwate.html" class="red">岩手</a></li>
+    <li><a href="nagano.html" class="red">長野</a></li>
+    <li><a href="mie.html" class="red">三重</a></li>
+    <li><a href="fukuoka.html" class="red">福岡</a></li>
+    <li><a href="hiroshima.html" class="red">広島</a></li>
+    <li><a href="hyogo.html" class="red">兵庫</a></li>
+  </ul>
+  
+  <body>
+  	<div id="container">
+	<div id ="boxA">
+    <img src="img/k_iwate.png" width="1200" usemap="#iwate">
+    <map name="iwate">
+      <area shape="rect" coords="90,60,200,120" href="img/iwate1.png" class="map">
+      <area shape="rect" coords="90,150,200,220" href="img/iwate2.png" class="map"> 
+      <area shape="rect" coords="90,250,200,370" href="img/iwate3.png" class="map">
+      <area shape="rect" coords="230,60,340,120" href="img/iwate4.png" class="map">
+      <area shape="rect" coords="230,150,340,220" href="img/iwate5.png" class="map">
+      <area shape="rect" coords="230,250,340,370" href="img/iwate6.png" class="map">
+      <area shape="rect" coords="370,60,490,120" href="img/iwate7.png" class="map">
+      <area shape="rect" coords="370,150,490,220" href="img/iwate8.png" class="map">
+      <area shape="rect" coords="370,250,490,370" href="img/iwate9.png" class="map">
+	  <area shape="rect" coords="510,60,630,120" href="img/iwate10.png" class="map">
+      <area shape="rect" coords="510,150,630,220" href="img/iwate11.png" class="map">
+      <area shape="rect" coords="510,250,630,370" href="img/iwate12.png" class="map">
+	  <area shape="rect" coords="650,60,770,120" href="img/iwate13.png" class="map">
+      <area shape="rect" coords="650,150,770,220" href="img/iwate14.png" class="map">
+      <area shape="rect" coords="650,250,770,370" href="img/iwate15.png" class="map">
+	  <area shape="rect" coords="790,60,910,120" href="img/iwate16.png" class="map">
+      <area shape="rect" coords="790,150,910,220" href="img/iwate17.png" class="map">
+      <area shape="rect" coords="790,250,910,370" href="img/iwate18.png" class="map">
+	  <area shape="rect" coords="930,60,1040,120" href="img/iwate19.png" class="map">
+      <area shape="rect" coords="930,150,1040,220" href="img/iwate20.png" class="map">
+      <area shape="rect" coords="930,250,1040,370" href="img/iwate21.png" class="map">              
+	  <area shape="rect" coords="1070,60,1190,120" href="img/iwate22.png" class="map">
+      <area shape="rect" coords="1070,250,1190,370" href="img/iwate24.png" class="map">      
+    </map>
+    </div>
+	
+	<div id="boxB">
+	<br>
+	<img src="img/g_iwate.png" width="400">
+	</div>
+
+	<div id="boxC">	   
+    <p>
+岩手県民は常に故郷の岩手を忘れない。それが、最も支持度の高い＜心は岩手＞に表れている。「東北の岩手県」「奥州市」と出身地そのものに関するコミュニティが多く、岩手県民が上京しても絶えず故郷の情報収集を怠らない姿が想像できる。次に、岩手といえばやはり盛岡である。＜盛岡グルメ＞は、特に盛岡を中心とした地元名物グルメで構成されている。「盛岡冷麺」「じゃじゃ麺」とグルメが名を連ねており、故郷の名物グルメが自分たちの出身県を語る上でなくてはならない存在である。また「盛岡てくり」といったミニコミ情報誌による情報収集や、盛岡の学校コミュニティによる同窓生の繋がりを大切にする姿も窺える。
+  <br><br>
+岩手県民は強い故郷愛がある一方で、自己主張が決して得意ではないことが＜ナイーブな私＞から想像できる。「社交的だけど人見知り」な岩手県民は、上京し友人関係を構築していく中で時としてうまくいかないことも多いだろう。そのため「1人で過ごす時間も好き」で時折「甘くて切ないHip-Hop R&B Raggae」や「RADWIMPS」の歌詞に思いを重ねながら自己を省みる。ナイーブな面のある岩手県民の対人関係は「ありがとう。ごめんね。」だが、「好きな人に影響されやすい」ことに自覚的でもあり、決して引きこもって生きていたいわけではなく、少しずつ距離を縮めながら対人関係を大切にする。ナイーブな自己に自覚的な岩手県民は、堅実に、けれど内省の場である家の中で快適に過ごすことに余念がないことが＜快適ワンルーム＞からわかる。「楽しい節約で貯金しよう」「好き好きインテリア」からは、贅沢ではないもののこだわりを持って生活する慎ましやかな姿が見える。また「恋愛観察バラエティーあいのり」を欠かさず視聴しては「恋愛の法則」を学び、運命の人に出会う時のために「プロが教える巻き髪講座」と「お洒落スナップ」で華やかさを学ぶ。同様に、岩手県民の堅実さは＜楽しい節約レシピ＞にも表れている。「手作りのお弁当」は当然である。だが料理大好きというわけではなく、「簡単なお菓子を作るぞ」「炊飯器レシピ」と、楽をしておいしく節約が岩手県民の目指すところである。それもこれも、無理にではなく「楽しい節約生活」を送るための工夫である。
+　<br>
+　<br>
+このように、岩手県の東京＜県民＞スタイルは、親密圏と自由圏に特化して、その2つのスタイルを機能的に分化させたパタンである。日常生活では快適ワンルームに暮らし、節約レシピで食事を楽しみ、質素でもビューティを忘れない、そんなナイーブな私がリアルに生きている。それが岩手県民らしい私の日常のリアルな東京スタイルである。しかし他方、望郷の念がないわけではなく、時折ネットを活用し、故郷のあたたかさに触れている。心は岩手において、決して東京人になったわけではなく、心の底ではいつも故郷を思い、地元のグルメ情報を眺めては懐かしい思いに浸っている。東京ライフに疲れた時の癒しは何と言っても岩手の親密なコミュニティである。このように、岩手県のスタイルは、親密圏と自由圏を分化させた典型的なパタンであり、東京＜県民＞スタイルのモデルを策定する上で重要な実例である。</p>
+　</div>
+    
+    <!--マウスオーバー用script-->
+	<script>  
+		jQuery.noConflict();  
+		(function($){    		
+		$('.map').imgPreview({
+    		containerID: 'imgPreviewWithStyles',
+    		imgCSS: {
+    		    height: 250
+    		},
+    		onShow: function(link){
+        		$(link).stop().animate({opacity:0.4});
+        		$('img', this).css({opacity:0});
+    		},
+    		onLoad: function(){
+        		$(this).animate({opacity:1}, 300);
+    		},
+    		onHide: function(link){
+        		$(link).stop().animate({opacity:1});
+    		}
+		}); 
+		})(jQuery);  
+	</script>  
+  </body>
+</html>
+

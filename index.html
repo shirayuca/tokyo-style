@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN">
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>東京県民の多様な東京スタイル</title>
+    
+    <link rel="stylesheet" type="text/css" href="win.css" media="all">  
+	<script language="JavaScript" type="text/javascript" src="mac.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!--Google API読み込み--> 
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    
+    <!--Google Visualization API読み込み-->
+    <script type="text/javascript">
+    	google.load("visualization", "1", {packages: ["geomap"]});
+    	google.load("visualization", "1", {packages: ["corechart"]});
+    	google.load("visualization", "1", {packages: ["table"]});
+    	
+    	//init 定義
+    	function init(){
+    		sendQuery();
+    	}
+ 
+    	
+    	//body.onload 時に init を呼び出す
+    	google.setOnLoadCallback(init);
+    	
+    	
+    	// マップチャートクエリ送信
+    	function sendQuery() {
+    		//データ取得用クエリを作成し送信
+    		var query = new google.visualization.Query("https://spreadsheets.google.com/tq?key=0Aoyz9s5DNe4WdDVtMzg3cW81bk5mOWxial9GMFR4UUE");
+    		//プルダウンメニューでフィルタリング
+    		query.setQuery( "where D='" + document.getElementById('select_column').value + "'" ); 
+    		query.send(drawMapChart);
+    	}
+    	
+
+    	//マップチャート定義
+    	function drawMapChart(response) {
+    		//データ定義
+    		var data = response.getDataTable();
+    		
+    		//マップ
+    		var options = {};      
+      		options['region'] = 'JP';
+      		options['showZoomOut'] = true;	//そのうち機能を付けよう
+    		var geomap = new google.visualization.GeoMap(document.getElementById('map_div'));
+    		geomap.draw(data, options);
+			
+			//チャート
+    		var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+    		chart.draw( data, { width: 1200, height: 200,
+    																hAxis: {slantedTextAngle: 90, showTextEvery: 1},													
+        															vAxis: {minValue: 0, maxValue: 0.1},
+        															legend: 'none'
+    		});
+    	}
+    	
+    	
+    	//描画
+    	google.setOnLoadCallback(drawMapChart);
+    
+    </script>
+  
+  </head>
+  <body>
+  <h3>東京県民の多様な東京スタイル</h3>
+  
+  <ul class="tab clear">
+    <li class="none"><a href="index.html" class="green">はじめに</a></li>
+    <li><a href="net.html" class="blue">ネット県民</a></li>
+    <li><a href="tokyo.html" class="blue">東京県民</a></li>
+    <li><a href="iwate.html" class="red">岩手</a></li>
+    <li><a href="nagano.html" class="red">長野</a></li>
+    <li><a href="mie.html" class="red">三重</a></li>
+    <li><a href="fukuoka.html" class="red">福岡</a></li>
+    <li><a href="hiroshima.html" class="red">広島</a></li>
+    <li><a href="hyogo.html" class="red">兵庫</a></li>
+  </ul>
+  
+    <div id="boxA">
+      <p>
+      <br><br>
+      このページは、「ソーシャルメディアを活用した「おしゃべりなロングテール」をめぐる方法論的展開と実態分析」というテーマの博士論文の一部です。
+      <br>
+      「“東京県民”の多様な東京スタイル」というテーマで、mixiコミュニティの比較分析から、上京者のスタイルの多様性を分析しています。
+      </p>
+    </div>
+  </body>
+</html>
+

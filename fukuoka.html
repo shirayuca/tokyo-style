@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN">
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>東京県民の多様な東京スタイル</title>
+    <link rel="stylesheet" type="text/css" href="win.css" media="all">  
+	<script language="JavaScript" type="text/javascript" src="mac.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!--Google API読み込み--> 
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script> 
+  
+    <!--マウスオーバー時に画像表示-->
+    <script type="text/javascript">google.load("jquery", "1.3");</script>  
+    <script type="text/javascript" src="imgpreview.js"></script>
+    
+    <script type="text/javascript">
+$(function(){
+	var thumbSize = 400;
+	var magnifySize = 700;
+
+	$(".magnify").each(function(){
+		$(this).css({width:(thumbSize)});
+	});
+
+	var objWidth = $('.magnify').width();
+	var objHeight = $('.magnify').height();
+
+	$(".magnify").each(function(){
+		$(this).wrapAll('<span class="magnify_cover"></span>');
+		$(this).parent('.magnify_cover').css({
+			margin: '0 10px 10px 0',
+			width: (objWidth),
+			height: (objHeight),
+			float: 'left',
+			position: 'relative'
+		});
+	});
+
+	$(".magnify").hover(function(){
+		$(this).css({top:'0',left:'0',position: 'absolute'});
+		$(this).stop().animate({width:(magnifySize)},500,function(){
+			$(this).addClass('shadow');
+		});
+	}, function(){
+		$(this).stop().animate({width:(thumbSize)},300,function(){
+			$(this).css({top:'',left:'',position: 'relative'});
+			$(this).removeClass('shadow');
+		});
+	});
+
+});
+</script>
+  
+  </head>
+  <h3>東京県民の多様な東京スタイル</h3>
+  
+  <ul class="tab clear">
+    <li><a href="index.html" class="green">はじめに</a></li>
+    <li><a href="net.html" class="blue">ネット県民</a></li>
+    <li><a href="tokyo.html" class="blue">東京県民</a></li>
+    <li><a href="iwate.html" class="red">岩手</a></li>
+    <li><a href="nagano.html" class="red">長野</a></li>
+    <li><a href="mie.html" class="red">三重</a></li>
+    <li class="none"><a href="fukuoka.html" class="red">福岡</a></li>
+    <li><a href="hiroshima.html" class="red">広島</a></li>
+    <li><a href="hyogo.html" class="red">兵庫</a></li>
+  </ul>
+  
+  <body>
+  	<div id="container">
+	<div id ="boxA">
+    <img src="img/k_fukuoka.png" width="1200" usemap="#fukuoka">
+    <map name="fukuoka">
+      <area shape="rect" coords="100,80,220,190" href="img/fukuoka1.png" class="map">
+
+      <area shape="rect" coords="260,80,390,190" href="img/fukuoka4.png" class="map"> 
+      <area shape="rect" coords="260,210,390,340" href="img/fukuoka5.png" class="map"> 
+       <area shape="rect" coords="260,370,390,480" href="img/fukuoka6.png" class="map"> 
+      <area shape="rect" coords="420,80,550,190" href="img/fukuoka7.png" class="map"> 
+      <area shape="rect" coords="420,210,550,340" href="img/fukuoka8.png" class="map"> 
+       <area shape="rect" coords="420,370,550,480" href="img/fukuoka9.png" class="map">
+       <area shape="rect" coords="580,80,700,190" href="img/fukuoka10.png" class="map"> 
+      <area shape="rect" coords="580,210,700,340" href="img/fukuoka11.png" class="map"> 
+       <area shape="rect" coords="580,370,700,480" href="img/fukuoka12.png" class="map">
+       <area shape="rect" coords="740,80,860,190" href="img/fukuoka13.png" class="map"> 
+      <area shape="rect" coords="740,210,860,340" href="img/fukuoka14.png" class="map"> 
+       <area shape="rect" coords="740,370,860,480" href="img/fukuoka15.png" class="map">        
+       <area shape="rect" coords="900,80,1020,190" href="img/fukuoka16.png" class="map"> 
+
+       <area shape="rect" coords="900,370,1020,480" href="img/fukuoka18.png" class="map"> 
+       <area shape="rect" coords="1050,80,1180,190" href="img/fukuoka19.png" class="map"> 
+ 
+       <area shape="rect" coords="1050,370,1180,480" href="img/fukuoka21.png" class="map">
+    </map>
+    </div>
+
+    　<div id="boxB">
+     <br>
+	<img src="img/g_fukuoka.png" width="400">
+      </div>
+    
+	<div id="boxC">	   
+    <p>
+まず、福岡情報に関する＜福岡の遊び場＞である。福岡県民は、忙しく東京生活を送る一方「福岡の遊び場紹介」から常に目を離さないバイタリティを持っている。遊び場のみならず、「福岡で知り合いを増やそう！」と、遊び相手をも探すのが福岡県民の遊びへの本気度を表している。福岡出身のブランド意識を如実に表す＜私たち九州男児・乙女＞からは自分自身が「九州男児」である誇りが感じ取られる。当然、「博多弁まるだし」であることは恥になりようがないのである。また、＜北九州＞からは「★☆北九州出身集合☆★」と東京で集い、「北九弁の会」に示されるように方言での活発な会話が想像できる。＜福岡県民東京の集い＞は、9.63%支持される。「福岡市出身☆東京会」「東京在住福岡出身の会」と、東京で集う福岡県民らのコミュニティは無数に乱立しており、そのアクティブさは計り知れない。
+<br><br>
+福岡らしさが全て詰まった＜WE LOVE 福岡＞からは、「福岡に上京してきた明太子達。」と上京先でも福岡県民同士親交を深めることに積極的な姿が容易に想像できる。それは当然「やっぱり福岡が大好きやん」というただ一つの理由による。「福岡ソフトバンクホークス」「博多華丸・大吉」「福岡県方言研究」と多岐に渡る福岡文化を酒の肴に東京でも語り合いたいのが福岡県民なのである。
+<br><br>
+福岡県民はとかく集まり飲み会で友情を育むことが＜東京でオフ会＞にも表れている。「関東のホークスファン」と何か共通の話題があればなおのこと、たとえそれがなくとも「突発オフ★in東京」と新しい生活の場で人と出会うことにためらいがない。まるで出会いを通じて福岡県民は自身の元気を作り出しているかのようである。そんな福岡県民はやはり＜夜遊び好きの私＞である。飲み会で盛り上がることを最優先する彼らは当然「夜行性人間」であり、飲み会のシメは「とんこつラーメン」なのである。
+<br>
+<br>
+福岡県の東京＜県民＞スタイルは、親密社交圏が最大の核となり、そこに親密圏と自由圏が連なるパタンである。東京に生きる福岡県民は、とかく同郷者同士で集い酒を片手に語り合う。それは親密社交圏に示される＜we love 福岡＞というただ一つの理由による。たとえ福岡の地を離れても「福岡ソフトバンクホークス」を愛する者同士で語り合うという、同郷者の集いによる福岡と東京の融合こそが彼らにとってのリアルな日常なのだ。そのような東京ライフを支えるのは当然福岡という地そのもので、だから福岡県民は望郷というより帰省時に集い語らうための＜福岡の遊び場＞情報をネット上でせっせと収集する。福岡県民にとって、どこに生きていようが重要なのは＜夜遊び好きの私＞が満足に楽しむ瞬間であり、だからこそ＜東京でオフ会＞にも積極的に参加する。このように、福岡県のスタイルは親密社交圏という融合軸に核を置き、親密圏と自由圏がわずかに結合する、東京＜県民＞スタイルの例である。
+    </p>
+　</div>
+    
+    <!--マウスオーバー用script-->
+	<script>  
+		jQuery.noConflict();  
+		(function($){    		
+		$('.map').imgPreview({
+    		containerID: 'imgPreviewWithStyles',
+    		imgCSS: {
+    		    height: 250
+    		},
+    		onShow: function(link){
+        		$(link).stop().animate({opacity:0.4});
+        		$('img', this).css({opacity:0});
+    		},
+    		onLoad: function(){
+        		$(this).animate({opacity:1}, 300);
+    		},
+    		onHide: function(link){
+        		$(link).stop().animate({opacity:1});
+    		}
+		}); 
+		})(jQuery);  
+	</script>  
+  </body>
+</html>
+

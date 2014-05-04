@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN">
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>東京県民の多様な東京スタイル</title>
+    
+    <link rel="stylesheet" type="text/css" href="win.css" media="all">  
+	<script language="JavaScript" type="text/javascript" src="mac.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!--Google API読み込み--> 
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script> 
+  
+    <!--マウスオーバー時に画像表示-->
+    <script type="text/javascript">google.load("jquery", "1.3");</script>  
+    <script type="text/javascript" src="imgpreview.js"></script>
+    
+    <script type="text/javascript">
+$(function(){
+	var thumbSize = 400;
+	var magnifySize = 700;
+
+	$(".magnify").each(function(){
+		$(this).css({width:(thumbSize)});
+	});
+
+	var objWidth = $('.magnify').width();
+	var objHeight = $('.magnify').height();
+
+	$(".magnify").each(function(){
+		$(this).wrapAll('<span class="magnify_cover"></span>');
+		$(this).parent('.magnify_cover').css({
+			margin: '0 10px 10px 0',
+			width: (objWidth),
+			height: (objHeight),
+			float: 'left',
+			position: 'relative'
+		});
+	});
+
+	$(".magnify").hover(function(){
+		$(this).css({top:'0',left:'0',position: 'absolute'});
+		$(this).stop().animate({width:(magnifySize)},500,function(){
+			$(this).addClass('shadow');
+		});
+	}, function(){
+		$(this).stop().animate({width:(thumbSize)},300,function(){
+			$(this).css({top:'',left:'',position: 'relative'});
+			$(this).removeClass('shadow');
+		});
+	});
+
+});
+</script>
+  
+  </head>
+  <h3>東京県民の多様な東京スタイル</h3>
+  
+  <ul class="tab clear">
+    <li class="none"><a href="index.html" class="green">はじめに</a></li>
+    <li><a href="net.html" class="blue">ネット県民</a></li>
+    <li><a href="tokyo.html" class="blue">東京県民</a></li>
+    <li><a href="iwate.html" class="red">岩手</a></li>
+    <li><a href="nagano.html" class="red">長野</a></li>
+    <li><a href="mie.html" class="red">三重</a></li>
+    <li><a href="fukuoka.html" class="red">福岡</a></li>
+    <li class="none"><a href="hiroshima.html" class="red">広島</a></li>
+    <li><a href="hyogo.html" class="red">兵庫</a></li>
+  </ul>
+  
+  <body>
+  	<div id="container">
+	<div id ="boxA">
+    <img src="img/k_hiroshima.png" width="1200" usemap="#hiroshima">
+    <map name="hiroshima">
+      <area shape="rect" coords="90,70,200,140" href="img/hiroshima1.png" class="map">
+      <area shape="rect" coords="90,170,200,270" href="img/hiroshima2.png" class="map"> 
+      <area shape="rect" coords="90,290,200,450" href="img/hiroshima3.png" class="map">  
+      <area shape="rect" coords="230,70,330,140" href="img/hiroshima4.png" class="map">
+      <area shape="rect" coords="230,170,330,270" href="img/hiroshima5.png" class="map"> 
+      <area shape="rect" coords="230,290,330,450" href="img/hiroshima6.png" class="map">  
+      <area shape="rect" coords="370,70,470,140" href="img/hiroshima7.png" class="map">
+      <area shape="rect" coords="370,170,470,270" href="img/hiroshima8.png" class="map"> 
+      <area shape="rect" coords="370,290,470,450" href="img/hiroshima9.png" class="map"> 
+      <area shape="rect" coords="510,70,610,140" href="img/hiroshima10.png" class="map">
+      <area shape="rect" coords="510,170,610,270" href="img/hiroshima11.png" class="map"> 
+      <area shape="rect" coords="510,290,610,450" href="img/hiroshima12.png" class="map"> 
+      <area shape="rect" coords="650,70,750,140" href="img/hiroshima13.png" class="map">
+      <area shape="rect" coords="650,170,750,270" href="img/hiroshima14.png" class="map"> 
+      <area shape="rect" coords="650,290,750,450" href="img/hiroshima15.png" class="map"> 
+      <area shape="rect" coords="790,70,890,140" href="img/hiroshima16.png" class="map">
+      <area shape="rect" coords="790,170,890,270" href="img/hiroshima17.png" class="map"> 
+      <area shape="rect" coords="790,290,890,450" href="img/hiroshima18.png" class="map"> 
+      <area shape="rect" coords="930,70,1030,140" href="img/hiroshima19.png" class="map">
+      <area shape="rect" coords="930,170,1030,270" href="img/hiroshima20.png" class="map"> 
+      <area shape="rect" coords="930,290,1030,450" href="img/hiroshima21.png" class="map"> 
+      <area shape="rect" coords="1070,70,1170,140" href="img/hiroshima22.png" class="map">
+      <area shape="rect" coords="1070,170,1170,270" href="img/hiroshima23.png" class="map"> 
+    </map>
+    </div>
+	
+	<div id="boxB">
+	<br>
+	<img src="img/g_hiroshima.png" width="400">
+	</div>
+
+	<div id="boxC">	   
+    <p>
+広島県民は、＜広島県民東京の集い＞大変重要視している。「関東在住広島出身者の集い」「広島出身東京新人」と、広島県民と繋がり続けることに対してとても積極的である。また、＜備後＞に、広島東部に特化した系がある。「備後弁」「関東福山人の集い」といった細分化した広島の特定地方に関するコミュニティがあり、ここにもやはり「★福山市民　集おぉーでぇ！★」というように繋がりを大変重視する考え方が見て取れる。
+<br><br>
+＜広島といえばお好み焼き＞で、「広島流お好み焼き（東京周辺）」の情報を収集するのはもはや当然であり、かつ「広島焼きって言うな！」という強い主張からもわかる。ただやはり広島風お好み焼きは地元で食べるのが一番いいのだろうことが、「広島に帰りたい！」といった故郷志向のコミュニティから見て取れる。広島県民にとってやはり頼れるのは同郷であることが＜広島同盟＞からわかる。「都会にいる広島県人」「関東でも廣島じゃけん」と、東京で広島県民と出会うことに対してとても積極的である。故郷愛のある彼らは当然「広島弁は可愛い」と信じて疑わず、「広島弁で喋ろう会関東支部」と集まっては広島弁で会話を重ね親交を深めているのだろう。また、＜カープ・サンフレッチェ＞から、広島のプロスポーツチームは上京後も応援するのが当然であることがわかる。「サンフレッチェ広島」「広島カープ」が大好きな彼らは、東京でも「関東カープ応援会」と集っては応援に向かう。
+<br><br>
+＜広島弁な私＞は、広島県民のアイデンティティを一番大きく形成している。「☆広島県人☆」なら「じゃけぇにキュン」とするのは当然のことなのだ。そして方言は地元志向への自閉ではなく、私らしさを表現するひとつでしかないことが、「興味のない事はどうでもいい」「人ごみが嫌い」といった、私語りコミュニティとの融合から明らかである。＜呉＞では、「広島呉の会」「呉弁友の会。」などに加え「東京カフェ」「●仕事帰りに飲む会●」があることから、やはり同郷のものらと集い飲んでは呉弁で会話をするといった姿が想像できる。
+<br><br>
+さらに、広島県民のメンタリティは、広島関連のコンテンツだけではないことが14.37%に支持される＜お気楽な私＞からわかる。彼らは「笑っちゃダメな時に笑っちゃう」「試験をなめてる」といった、ちょっとドジだけどお気楽な自分らしさを肯定している。
+<br>
+<br>
+広島県の東京＜県民＞スタイルは、親密社交圏と自由社交圏の融合軸に特化し、わずかに親密圏と自由圏にも位置する系があるパタンである。広島県民の東京ライフは、スポーツと言えば＜カープ・サンフレッチェ＞で、食事なら＜広島といえばお好み焼き＞と、故郷にいたころと変わらず広島県民同士で楽しむ姿が親密社交圏に表れている。加えてそこでは＜広島弁な私＞でいることが当然で、ネット上という故郷や身体から離れた空間においても＜広島弁な私＞でいるのが一番自然なスタイルなのだ。このように、東京に生きる私と広島県民の私は不可分であり、両者の融合は当然であることが、図9に示される構造図から明らかである。広島のスタイルは、故郷の文化と東京ライフの融合スタイルとして、東京＜県民＞の一例に位置づけられる。
+    </p>
+　</div>
+    
+    <!--マウスオーバー用script-->
+	<script>  
+		jQuery.noConflict();  
+		(function($){    		
+		$('.map').imgPreview({
+    		containerID: 'imgPreviewWithStyles',
+    		imgCSS: {
+    		    height: 250
+    		},
+    		onShow: function(link){
+        		$(link).stop().animate({opacity:0.4});
+        		$('img', this).css({opacity:0});
+    		},
+    		onLoad: function(){
+        		$(this).animate({opacity:1}, 300);
+    		},
+    		onHide: function(link){
+        		$(link).stop().animate({opacity:1});
+    		}
+		}); 
+		})(jQuery);  
+	</script>  
+  </body>
+</html>
+

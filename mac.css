@@ -1,0 +1,112 @@
+body {
+     font-family: sans-serif;
+     font-weight: lighter;
+     font-size: 80%;
+     width: 1200px;
+     margin: 20px auto;
+}
+
+img {
+	border-style: none;
+}
+a img {
+	border-style: none;
+}
+
+
+
+/* 段組み */
+#container {
+	width: 1200px;
+}
+#boxB {
+	width: 300px;
+	float: left;
+	padding: 1em;
+}
+#boxC {
+	width: 750px;
+	float: right;
+	padding: 2em;
+}
+#chart_div {
+	width: 1200px;
+	float: left;
+}
+#map_div {
+	width: 500px;
+	float: left;
+	padding: 2em;
+}
+
+
+
+/* タブ*/
+ul.tab {
+       margin: 0;
+       padding: 0;
+       border-bottom: 2px #ddd solid;
+}
+ul.tab li {
+       float: left;
+       margin: 0 0 0 5px;
+       position: relative;
+       bottom: -2px;
+       list-style-type: none;
+       border: 1px #ddd solid;
+       border-top: none;
+       border-bottom: 2px #ddd solid;
+}
+ul.tab li.none {
+       border-bottom: 2px #fff solid;
+       font-weight: bold;
+}
+ul.tab li a {
+       color: #000;
+       display: block;
+       padding: 3px 10px 5px;
+       text-decoration: none;
+       background: #fff;
+}
+ul.tab li a.blue {
+       border-top: 5px #2384dc solid;
+}
+ul.tab li a.green {
+       border-top: 5px #4cbb47 solid;
+}
+ul.tab li a.red {
+       border-top: 5px #dd1d25 solid;
+}
+ul.tab li a.yellow {	
+       border-top: 5px #ffd242 solid;
+}
+ul.tab li a:hover {
+       position: relative;
+       bottom: 6px;
+}
+/* clerfix */
+.clear:after {
+    content:"";
+    display:block;
+    overflow:hidden;
+}
+.clear:after {
+    clear:both;
+}
+.clear {
+    zoom:1;
+}
+
+
+/*画像マウスオーバー*/
+#imgPreviewWithStyles {
+	background: #333 url(image/loading.gif) center;
+	padding: 1em;
+	z-index: 999;
+}
+#imgPreviewWithStyles span {
+	color: white;
+	text-align: center;
+	display: block;
+	padding: 0;
+}
